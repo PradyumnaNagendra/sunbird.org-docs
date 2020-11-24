@@ -1,0 +1,331 @@
+---
+openapi: 3.0.1
+info:
+  title: ReadCourseBatchExamples
+  description: This documents lists all the example scenarios for read course batch API
+  version: 1.0
+servers:
+- url: https://dev.sunbirded.org
+paths:
+  /api/course/v1/batch/read/0130738884971806725:
+    get:
+      summary: example 1
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: X-Authenticated-User-token
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJsclI0MWpJNndlZmZoQldnaUpHSjJhNlowWDFHaE53a21IU3pzdzE0R0MwIn0.eyJqdGkiOiJkZWI1YWFmZC04ZjYxLTRiYTEtYWZmZi01MjZlMzM4YjFkN2QiLCJleHAiOjE2MDYxOTk0NzMsIm5iZiI6MCwiaWF0IjoxNjA2MTEzMDczLCJpc3MiOiJodHRwczovL2Rldi5zdW5iaXJkZWQub3JnL2F1dGgvcmVhbG1zL3N1bmJpcmQiLCJhdWQiOiJsbXMiLCJzdWIiOiIzZmU2MGI5Ny1iMTdhLTRhMTgtOTVhZi1hZjJlNGZlZjcwOWMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJsbXMiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI0YzkwM2MyNi05YTQxLTQyYjYtYWE0ZS05OWQyNTFiM2QxMTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vZGV2LnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJjbGllbnRJZCI6ImxtcyIsImNsaWVudEhvc3QiOiIxMDMuODYuMS4yNDkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtbG1zIiwiY2xpZW50QWRkcmVzcyI6IjEwMy44Ni4xLjI0OSIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Gv9S2LVfotYsBmLJKNbFCpYZ4L3_M28AqIMbBHK28yQqJqzDl4pCQ7MFmBBd1gAOI0MKvyDZgzA6tD_nqH12OJzWNeSLrM00J_qsV1HMQA-8mZ71oz6YjNX_-CvPllaJDuV0QrnNu3xewyxUr8iKTzfKT1oB1Ezh5ka_rBlgTVugNcXVXLqyB7m5oBwHEg_e921hiZkZPcfHJ7I2pE27Qh2dXrxPPZemqxc13NGzpGulRui7cgyRh7sBUZNqvC_H1Izh_ZJPuK_2y5AKCKpgglhjwOSvSlXYWMhkjolr34d58KBtL5AbimKuUzMV1FBH9LsHDZXJSyj9YxETVJkNxA
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      response:
+                        type: object
+                        properties:
+                          identifier:
+                            type: string
+                          createdFor:
+                            type: array
+                            items:
+                              type: string
+                          endDate: {}
+                          description: {}
+                          updatedDate: {}
+                          cert_templates:
+                            type: object
+                            properties:
+                              template_01_prad:
+                                type: object
+                                properties:
+                                  identifier:
+                                    type: string
+                                  criteria:
+                                    type: object
+                                    properties:
+                                      enrollment:
+                                        type: object
+                                        properties:
+                                          status:
+                                            type: integer
+                                  name:
+                                    type: string
+                                  notifyTemplate:
+                                    type: object
+                                    properties:
+                                      emailTemplateType:
+                                        type: string
+                                      subject:
+                                        type: string
+                                      stateImgUrl:
+                                        type: string
+                                      regards:
+                                        type: string
+                                      regardsperson:
+                                        type: string
+                                  issuer:
+                                    type: object
+                                    properties:
+                                      name:
+                                        type: string
+                                      publicKey:
+                                        type: array
+                                        items:
+                                          type: string
+                                      url:
+                                        type: string
+                                  signatoryList:
+                                    type: array
+                                    items:
+                                      type: object
+                                      properties:
+                                        image:
+                                          type: string
+                                        name:
+                                          type: string
+                                        id:
+                                          type: string
+                                        designation:
+                                          type: string
+                          batchId:
+                            type: string
+                          createdDate:
+                            type: string
+                          createdBy:
+                            type: string
+                          mentors:
+                            type: array
+                            items:
+                              type: string
+                          name:
+                            type: string
+                          id:
+                            type: string
+                          enrollmentType:
+                            type: string
+                          enrollmentEndDate: {}
+                          courseId:
+                            type: string
+                          collectionId:
+                            type: string
+                          startDate:
+                            type: string
+                          status:
+                            type: integer
+                  ver:
+                    type: string
+                  id:
+                    type: string
+                  params:
+                    type: object
+                    properties:
+                      resmsgid: {}
+                      err: {}
+                      msgid:
+                        type: string
+                      errmsg: {}
+                      status:
+                        type: string
+                  ts:
+                    type: string
+                  responseCode:
+                    type: string
+              examples:
+                "0":
+                  value: '{"id":"api.course.batch.read","ver":"v1","ts":"2020-11-24 04:43:58:075+0000","params":{"resmsgid":null,"msgid":"4535d1be-a9e1-4623-80b8-215d06e2b35f","err":null,"status":"success","errmsg":null},"responseCode":"OK","result":{"response":{"identifier":"0130738884971806725","createdFor":["ORG_001"],"endDate":null,"description":null,"updatedDate":null,"cert_templates":{"template_01_prad":{"identifier":"template_01_prad","criteria":{"enrollment":{"status":2}},"name":"Course completion certificate prad","notifyTemplate":{"emailTemplateType":"defaultCertTemp","subject":"Completion certificate","stateImgUrl":"https://sunbirddev.blob.core.windows.net/orgemailtemplate/img/File-0128212938260643843.png","regards":"Minister of Gujarat","regardsperson":"Chairperson"},"issuer":{"name":"Gujarat Council of Educational Research and Training","publicKey":["7","8"],"url":"https://gcert.gujarat.gov.in/gcert/"},"signatoryList":[{"image":"https://cdn.pixabay.com/photo/2014/11/09/08/06/signature-523237__340.jpg","name":"CEO Gujarat","id":"CEO","designation":"CEO"}]}},"batchId":"0130738884971806725","createdDate":"2020-07-28 10:52:56:277+0000","createdBy":"95e4942d-cbe8-477d-aebd-ad8e6de4bfc8","mentors":[],"name":"Notification Service Testing","id":"0130738884971806725","enrollmentType":"open","enrollmentEndDate":null,"courseId":"do_11307388484060774411524","collectionId":"do_11307388484060774411524","startDate":"2020-07-28","status":1}}}'
+      servers:
+      - url: https://dev.sunbirded.org
+    servers:
+    - url: https://dev.sunbirded.org
+  /api/course/v1/batch/read/013098097360011264:
+    get:
+      summary: Example 2
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: X-Authenticated-User-token
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJsclI0MWpJNndlZmZoQldnaUpHSjJhNlowWDFHaE53a21IU3pzdzE0R0MwIn0.eyJqdGkiOiJkZWI1YWFmZC04ZjYxLTRiYTEtYWZmZi01MjZlMzM4YjFkN2QiLCJleHAiOjE2MDYxOTk0NzMsIm5iZiI6MCwiaWF0IjoxNjA2MTEzMDczLCJpc3MiOiJodHRwczovL2Rldi5zdW5iaXJkZWQub3JnL2F1dGgvcmVhbG1zL3N1bmJpcmQiLCJhdWQiOiJsbXMiLCJzdWIiOiIzZmU2MGI5Ny1iMTdhLTRhMTgtOTVhZi1hZjJlNGZlZjcwOWMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJsbXMiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI0YzkwM2MyNi05YTQxLTQyYjYtYWE0ZS05OWQyNTFiM2QxMTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vZGV2LnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJjbGllbnRJZCI6ImxtcyIsImNsaWVudEhvc3QiOiIxMDMuODYuMS4yNDkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtbG1zIiwiY2xpZW50QWRkcmVzcyI6IjEwMy44Ni4xLjI0OSIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Gv9S2LVfotYsBmLJKNbFCpYZ4L3_M28AqIMbBHK28yQqJqzDl4pCQ7MFmBBd1gAOI0MKvyDZgzA6tD_nqH12OJzWNeSLrM00J_qsV1HMQA-8mZ71oz6YjNX_-CvPllaJDuV0QrnNu3xewyxUr8iKTzfKT1oB1Ezh5ka_rBlgTVugNcXVXLqyB7m5oBwHEg_e921hiZkZPcfHJ7I2pE27Qh2dXrxPPZemqxc13NGzpGulRui7cgyRh7sBUZNqvC_H1Izh_ZJPuK_2y5AKCKpgglhjwOSvSlXYWMhkjolr34d58KBtL5AbimKuUzMV1FBH9LsHDZXJSyj9YxETVJkNxA
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      response:
+                        type: object
+                        properties: {}
+                  ver:
+                    type: string
+                  id:
+                    type: string
+                  params:
+                    type: object
+                    properties:
+                      resmsgid: {}
+                      err: {}
+                      msgid:
+                        type: string
+                      errmsg: {}
+                      status:
+                        type: string
+                  ts:
+                    type: string
+                  responseCode:
+                    type: string
+              examples:
+                "0":
+                  value: '{"id":"api.course.batch.read","ver":"v1","ts":"2020-11-24 04:44:18:862+0000","params":{"resmsgid":null,"msgid":"bb568a0b-ad23-4563-bc7b-70bd489f7a76","err":null,"status":"success","errmsg":null},"responseCode":"OK","result":{"response":{}}}'
+      servers:
+      - url: https://dev.sunbirded.org
+    servers:
+    - url: https://dev.sunbirded.org
+  /api/course/v1/batch/read/0130654850421719040:
+    get:
+      summary: Example 3
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: X-Authenticated-User-token
+        in: header
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJsclI0MWpJNndlZmZoQldnaUpHSjJhNlowWDFHaE53a21IU3pzdzE0R0MwIn0.eyJqdGkiOiJkZWI1YWFmZC04ZjYxLTRiYTEtYWZmZi01MjZlMzM4YjFkN2QiLCJleHAiOjE2MDYxOTk0NzMsIm5iZiI6MCwiaWF0IjoxNjA2MTEzMDczLCJpc3MiOiJodHRwczovL2Rldi5zdW5iaXJkZWQub3JnL2F1dGgvcmVhbG1zL3N1bmJpcmQiLCJhdWQiOiJsbXMiLCJzdWIiOiIzZmU2MGI5Ny1iMTdhLTRhMTgtOTVhZi1hZjJlNGZlZjcwOWMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJsbXMiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI0YzkwM2MyNi05YTQxLTQyYjYtYWE0ZS05OWQyNTFiM2QxMTUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vZGV2LnN1bmJpcmRlZC5vcmciXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJjbGllbnRJZCI6ImxtcyIsImNsaWVudEhvc3QiOiIxMDMuODYuMS4yNDkiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtbG1zIiwiY2xpZW50QWRkcmVzcyI6IjEwMy44Ni4xLjI0OSIsImVtYWlsIjoic2VydmljZS1hY2NvdW50LWxtc0BwbGFjZWhvbGRlci5vcmcifQ.Gv9S2LVfotYsBmLJKNbFCpYZ4L3_M28AqIMbBHK28yQqJqzDl4pCQ7MFmBBd1gAOI0MKvyDZgzA6tD_nqH12OJzWNeSLrM00J_qsV1HMQA-8mZ71oz6YjNX_-CvPllaJDuV0QrnNu3xewyxUr8iKTzfKT1oB1Ezh5ka_rBlgTVugNcXVXLqyB7m5oBwHEg_e921hiZkZPcfHJ7I2pE27Qh2dXrxPPZemqxc13NGzpGulRui7cgyRh7sBUZNqvC_H1Izh_ZJPuK_2y5AKCKpgglhjwOSvSlXYWMhkjolr34d58KBtL5AbimKuUzMV1FBH9LsHDZXJSyj9YxETVJkNxA
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties:
+                      response:
+                        type: object
+                        properties:
+                          identifier:
+                            type: string
+                          createdFor:
+                            type: array
+                            items:
+                              type: string
+                          endDate: {}
+                          batchId:
+                            type: string
+                          createdDate:
+                            type: string
+                          createdBy:
+                            type: string
+                          name:
+                            type: string
+                          id:
+                            type: string
+                          enrollmentType:
+                            type: string
+                          courseId:
+                            type: string
+                          enrollmentEndDate: {}
+                          collectionId:
+                            type: string
+                          startDate:
+                            type: string
+                          status:
+                            type: integer
+                  ver:
+                    type: string
+                  id:
+                    type: string
+                  params:
+                    type: object
+                    properties:
+                      resmsgid: {}
+                      err: {}
+                      msgid:
+                        type: string
+                      errmsg: {}
+                      status:
+                        type: string
+                  ts:
+                    type: string
+                  responseCode:
+                    type: string
+              examples:
+                "0":
+                  value: '{"id":"api.course.batch.read","ver":"v1","ts":"2020-11-24 04:43:34:934+0000","params":{"resmsgid":null,"msgid":"3a826b26-2cdc-4a24-a242-126083239594","err":null,"status":"success","errmsg":null},"responseCode":"OK","result":{"response":{"identifier":"0130654850421719040","createdFor":["ORG_001"],"endDate":null,"batchId":"0130654850421719040","createdDate":"2020-07-16 13:45:24:876+0000","createdBy":"8454cb21-3ce9-4e30-85b5-fade097880d8","name":"test","id":"0130654850421719040","enrollmentType":"open","courseId":"do_11306547813044224012","enrollmentEndDate":null,"collectionId":"do_11306547813044224012","startDate":"2020-07-16","status":1}}}'
+        "401":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: object
+                    properties: {}
+                  ver:
+                    type: string
+                  id:
+                    type: string
+                  params:
+                    type: object
+                    properties:
+                      resmsgid: {}
+                      err:
+                        type: string
+                      msgid:
+                        type: string
+                      errmsg:
+                        type: string
+                      status:
+                        type: string
+                  ts:
+                    type: string
+                  responseCode:
+                    type: string
+              examples:
+                "0":
+                  value: '{"id":"api.course.batch.read","ver":"v1","ts":"2020-11-24 04:43:11:114+0000","params":{"resmsgid":null,"msgid":"482e1a04-c0fb-482f-94cf-67b6672c2c00","err":"UNAUTHORIZED_USER","status":"SERVER_ERROR","errmsg":"You are not authorized."},"responseCode":"CLIENT_ERROR","result":{}}'
+      servers:
+      - url: https://dev.sunbirded.org
+    servers:
+    - url: https://dev.sunbirded.org
+components:
+  schemas:
+    Schema:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: http://yourauthurl.com
+          scopes:
+            scope_name: Enter your scopes here
